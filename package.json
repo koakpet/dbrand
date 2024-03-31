@@ -1,0 +1,28 @@
+{
+  "name": "dbrand",
+  "version": "1.0.0",
+  "description": "Web Application for DBrand Fashion House, showcasing the best of trends, available for sales and bespoke services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cloths",
+    "dresses",
+    "bespoke",
+    "dress",
+    "gown",
+    "blouse",
+    "shirt",
+    "trouser",
+    "senator"
+  ],
+  "author": "Kohly Akpet",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.19.1",
+    "lodash": "^4.17.21"
+  }
+}
