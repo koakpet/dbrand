@@ -30,6 +30,37 @@ a {
     font-weight: 450;
 }
 
+.store {
+    width: 88%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature, .options {
+    width: 585px;
+    height: 585px;
+    overflow: hidden;
+}
+
+.ft-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.opt-img {
+    width: 288px;
+    height: 285px;
+    overflow: hidden;
+}
+
 .trending {
     padding: 12px 0;
     display: flex;
