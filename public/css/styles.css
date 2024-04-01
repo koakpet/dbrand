@@ -7,9 +7,11 @@ a {
     color: inherit;
 }
 
+/* JUMBOTRON STYE RULES FOR DESKTOP VIEW */
 .intro {
-    margin: 69px 0;
+    margin-top: 69px;
     padding: 90px 360px;
+    background-color: #f8f8f8;
 }
 
 .intro h1 {
@@ -30,12 +32,122 @@ a {
     font-weight: 450;
 }
 
+/* SHOP STYLE RULES FOR DESKTOP VIEW */
+.mini-store {
+    padding: 90px 0;
+}
+
+.store {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 1.5px;
+}
+
+.feature, .options {
+    margin: auto;
+    width: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+.store img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opt-img {
+    width: 49%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+/* TRENDING STYLE RULES FOR DESKTOP VIEW */
+.trending {
+    padding: 120px 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 390px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER STYLE RULES FOR DESKTOP VIEW */
+.terms {
+    height: 315px;
+    width: 100%;
+    background-color: #000000;
+    color: #838383;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.terms1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.terms2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    font-size: 10.5px;
+}
+.terms2 a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.copyright {
+    width: 100%;
+    height: 72px;
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    color: #838383;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*.copyright :nth-child(2) {
+    font-size: 24px;
+}*/
+
+.copyright a:hover {
+    color: #ffffff;
+}
+
 
 /* *** Media Query for Mobile View*/
 @media (max-width:767px) {
-    /* Main Body Styles for Mobile View */
+    /* JUMBOTRON STYLE RULES FOR MOBILE VIEW */
     .intro {
-        margin-top: 75px;
         padding: 60px 30px;
         background-color: #f8f8f8;
     }
@@ -58,11 +170,16 @@ a {
         font-weight: 450;
     }
     
+    /* SHOP STYLE RULES FOR MOBILE VIEW */
+    .mini-store {
+        padding: 75px 0;
+    }
+
     .store {
         width: 90%;
         margin: auto;
         display: flex;
-        gap: 21px;
+        gap: 3px;
         flex-direction: column;
     }
     
@@ -70,6 +187,7 @@ a {
         width: 100%;
         aspect-ratio: 1/1;
         overflow: hidden;
+        background-color: inherit;
     }
     
     .store img {
@@ -80,26 +198,15 @@ a {
 
     .options {
         display: flex;
-        justify-content: space-between;
-        gap: 6;
         flex-wrap: wrap;
     }
 
     .opt-img {
-        width: 47%;
+        width: 49%;
+        margin: auto;
         aspect-ratio: 1/1;
         overflow: hidden;
     }
-
-    /*.ft-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    
-    
-    */
     
     /* Footer Styles for Mobile View */
     .terms1 {
