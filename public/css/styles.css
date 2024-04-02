@@ -355,11 +355,13 @@ input, button {
 
     .newsletter input {
         height: 36px;
-        font-size: 18px;
+        width: 180px;
+        font-size: 15px;
     }
 
     .newsletter button {
         font-size: 12px;
+        width: 105px;
         height: 36px;
     }
     
