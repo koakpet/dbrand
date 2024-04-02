@@ -7,6 +7,11 @@ a {
     color: inherit;
 }
 
+input, button {
+    outline: none;
+    border: none;
+}
+
 /* JUMBOTRON STYE RULES FOR DESKTOP VIEW */
 .intro {
     margin-top: 69px;
@@ -90,6 +95,79 @@ a {
     object-fit: cover;
 }
 
+/* NEWSLETTER STYLE RULES FOR DESKTOP VIEW */
+.gala {
+    padding: 150px 0;
+    background-color: #f8f8f8;
+    display: flex;
+    gap: 30px;
+}
+.gallery {
+    display: flex;
+    width: 50%;
+    gap: 3px;
+    justify-content: flex-end;
+}
+
+.gallery-img {
+    width: 36%;
+    border-radius: 3px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact {
+    border: #000000 1px solid;
+    background-color: #ffffff;
+    border-radius: 3px;
+    align-content: center;
+    text-align: center;
+}
+
+.contact h3 {
+    padding-bottom: 15px;
+}
+.contact p {
+    padding-top: 9px;
+    font-size: 12px;
+}
+
+.newsletter {
+    display: flex;
+    padding: 0 90px;
+}
+
+.newsletter input {
+    width: 240px;
+    height: 45px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #838383;
+    padding: 3px 9px;
+    font-size: 15px;
+}
+
+.newsletter button {
+    width: 120px;
+    height: 45px;
+    background-color: #838383;
+    border-radius: 0 3px 3px 0;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newsletter button:hover {
+    background-color: #000000;
+}
+
 /* FOOTER STYLE RULES FOR DESKTOP VIEW */
 .terms {
     height: 315px;
@@ -144,7 +222,27 @@ a {
 }
 
 
-/* *** Media Query for Mobile View*/
+/* *** MEDIA QUERY FOR TABLETS */
+@media (max-width: 1199px) {
+    .intro {
+        margin: 75px 0;
+        padding: 45px 120px 45px 30px;
+    }
+
+    .intro h1 {
+        font-size: 60px;
+        line-height: 63px;
+        margin: 0 0 24px 0;
+    }
+
+    .intro p {
+        font-size: 15px;
+        color: #838383;
+    }
+}
+
+
+/* *** MEDIA QUERY FOR MOBILE VIEW */
 @media (max-width:767px) {
     /* JUMBOTRON STYLE RULES FOR MOBILE VIEW */
     .intro {
@@ -207,8 +305,65 @@ a {
         aspect-ratio: 1/1;
         overflow: hidden;
     }
+
+    /* NEWSLETTER STYLE RULES FOR MOBILE VIEW */
+    .gala {
+        padding: 90px 0;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .gallery {
+        display: flex;
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery-img {
+        width: 50%;
+        border-radius: 3px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+    }
+
+    .gallery-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contact {
+        border: #000000 1px solid;
+        border-radius: 3px;
+        padding: 45px 0;
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact h3 {
+        padding-bottom: 9px;
+        font-size: 15px;
+    }
+
+    .newsletter {
+        display: flex;
+        padding: 0;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .newsletter input {
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .newsletter button {
+        font-size: 12px;
+        height: 36px;
+    }
     
-    /* Footer Styles for Mobile View */
+    /* FOOTER STYLE RULES FOR MOBILE VIEW */
     .terms1 {
         gap: 24px;
         font-size: 24px;
